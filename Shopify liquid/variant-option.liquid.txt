@@ -1,0 +1,12 @@
+   <div class="variant">
+                      <ul>
+                 {% for variant in card_product.variants %}
+      {% for option in variant.options %}
+        
+        <a href="{{ card_product.url }}?variant={{ variant.id }}"><li class="">{{ option | escape }}</li></a>
+      {% endfor %}
+                    {% endfor %}
+            
+    </ul>
+                        
+                   </div>
